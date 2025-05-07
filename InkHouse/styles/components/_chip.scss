@@ -1,0 +1,27 @@
+.chip {
+    @include reset-button;
+    @include fluid-text(20, 18);
+
+    height: 43px;
+    padding: 0 20px;
+    font-weight: 500;
+    border-radius: 20px;
+
+    color: var(--font-color);
+    background-color: var(--color-container-surface);
+
+    &--active {
+        background-color: var(--color-container-surface-accent);
+        color: var(--color-on-container-surface-accent)
+    }
+
+    @include hover {
+        cursor: pointer;
+        background-color: var(--color-primary);
+        color: var(--color-on-primary)
+    }
+
+    @include tablet-s {
+        height: 41px;
+    }
+}

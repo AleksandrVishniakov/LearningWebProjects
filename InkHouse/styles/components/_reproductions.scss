@@ -1,0 +1,120 @@
+.reproductions {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 var(--padding-x);
+    margin: 70px auto 0 auto;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+
+        @include tablet-s {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__chips-list {
+        max-width: 100%;
+        display: flex;
+        column-gap: 32px;
+        overflow-x: auto;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include tablet-s {
+            column-gap: 20px;
+        }
+    }
+
+    &__list {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include desktop {
+            gap: 15px;
+        }
+    }
+
+    @include mobile {
+        margin-top: 60px;
+    }
+}
+
+.reproduction {
+    flex: 1;
+    min-width: 330px;
+    height: fit-content;
+    background-color: var(--color-container-surface);
+    padding: 20px;
+
+    &__image {
+        margin: 0 auto;
+        max-height: 420px;
+        height: 100%;
+        width: auto;
+
+        @include mobile {
+            object-fit: cover;
+            width: 100%;
+            aspect-ratio: 1;
+        }
+    }
+
+    &__author {
+        margin-top: 20px;
+        color: var(--color-font-variant);
+    }
+
+    &__name {
+        margin-top: 10px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        margin-top: 8px;
+    }
+
+    &__price {
+        @include fluid-text(24, 20);
+        color: var(--color-primary);
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+    &__buy-button {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    @include desktop {
+        min-width: 295px;
+    }
+
+    @include tablet {
+        min-width: 240px;
+    }
+
+    @include tablet-s {
+        max-width: 240px;
+        min-width: 160px;
+    }
+
+    @include mobile {
+        min-width: 100%;
+    }
+}

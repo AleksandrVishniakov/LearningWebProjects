@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>Ink. House</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#"><img src="./assets/images/logo.svg" alt="Ink. House" class="logo"></a>
+        <nav class="header__menu hidden-mobile">
+            <ul class="header__menu-list">
+                <li class="header__menu-item menu-item"><a href="#reproductionsSection">Репродукции</a></li>
+                <li class="header__menu-item menu-item"><a href="#promoSection">Новинки</a></li>
+                <li class="header__menu-item menu-item"><a href="#teamSection">О нас</a></li>
+                <li class="header__menu-item">
+                    <a href="#" class="cart-button">
+                        <!-- Attribute data-cart-items-count="1" can be provided for <a> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_222)">
+                                <path
+                                    d="M9.24992 21.1667C9.75618 21.1667 10.1666 20.7563 10.1666 20.25C10.1666 19.7437 9.75618 19.3333 9.24992 19.3333C8.74366 19.3333 8.33325 19.7437 8.33325 20.25C8.33325 20.7563 8.74366 21.1667 9.24992 21.1667Z"
+                                    stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M19.3334 21.1667C19.8397 21.1667 20.2501 20.7563 20.2501 20.25C20.2501 19.7437 19.8397 19.3333 19.3334 19.3333C18.8272 19.3333 18.4167 19.7437 18.4167 20.25C18.4167 20.7563 18.8272 21.1667 19.3334 21.1667Z"
+                                    stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M1.91675 1.91667H5.58341L8.04008 14.1908C8.12391 14.6129 8.3535 14.992 8.68866 15.2618C9.02383 15.5316 9.44322 15.6749 9.87341 15.6667H18.7834C19.2136 15.6749 19.633 15.5316 19.9682 15.2618C20.3033 14.992 20.5329 14.6129 20.6167 14.1908L22.0834 6.5H6.50008"
+                                    stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_222">
+                                    <rect width="22" height="22" fill="white" transform="translate(1 1)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__menu--mobile visible-mobile">
+            <button id="burgerButton" class="header__menu-burger burger-button" type="button"></button>
+            
+            <a href="#" class="header__menu-cart cart-button">
+                <!-- Attribute data-cart-items-count="1" can be provided for <a> -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_222)">
+                        <path
+                            d="M9.24992 21.1667C9.75618 21.1667 10.1666 20.7563 10.1666 20.25C10.1666 19.7437 9.75618 19.3333 9.24992 19.3333C8.74366 19.3333 8.33325 19.7437 8.33325 20.25C8.33325 20.7563 8.74366 21.1667 9.24992 21.1667Z"
+                            stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M19.3334 21.1667C19.8397 21.1667 20.2501 20.7563 20.2501 20.25C20.2501 19.7437 19.8397 19.3333 19.3334 19.3333C18.8272 19.3333 18.4167 19.7437 18.4167 20.25C18.4167 20.7563 18.8272 21.1667 19.3334 21.1667Z"
+                            stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M1.91675 1.91667H5.58341L8.04008 14.1908C8.12391 14.6129 8.3535 14.992 8.68866 15.2618C9.02383 15.5316 9.44322 15.6749 9.87341 15.6667H18.7834C19.2136 15.6749 19.633 15.5316 19.9682 15.2618C20.3033 14.992 20.5329 14.6129 20.6167 14.1908L22.0834 6.5H6.50008"
+                            stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_222">
+                            <rect width="22" height="22" fill="white" transform="translate(1 1)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <img src="./assets/images/main-bird.png" alt="Bird" class="main__image hidden-mobile">
+        <div class="main__content-wrapper">
+            <h1 class="main__title">Реплики картин от&nbsp;<span class="color-primary">Ink. House</span></h1>
+            <p class="main__subtitle">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие
+                произведения, доступные цены.</p>
+            <a href="#reproductionsSection" class="main__production-button button">Продукция</a>
+        </div>
+    </main>
+
+    <section class="section reproductions" id="reproductionsSection">
+        <header class="reproductions__header">
+            <h2 class="reproductions__title">Репродукции</h2>
+            <div class="reproductions__chips-list">
+                <button class="reproductions__chip chip chip--active" type="button"
+                    data-country="France">Франция</button>
+                <button class="reproductions__chip chip" type="button" data-country="Germany">Германия</button>
+                <button class="reproductions__chip chip" type="button" data-country="England">Англия</button>
+            </div>
+        </header>
+        <div class="reproductions__list" id="reproductionsList">
+
+        </div>
+        <template id="reproductionTemplate">
+            <div class="reproduction">
+                <img src="" alt="Репродукция" class="reproduction__image">
+                <p class="reproduction__author"></p>
+                <h3 class="reproduction__name"></h3>
+                <p class="reproduction__subtitle"></p>
+                <p class="reproduction__price"></p>
+                <button type="button" class="reproduction__buy-button button">В корзину</button>
+            </div>
+        </template>
+    </section>
+
+    <section class="promo" id="promoSection">
+        <header class="promo__header">
+            <svg class="promo__icon" viewBox="0 0 80 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M44.1865 21.2021L44.8262 23.5635L46.6406 21.9229L58.5215 11.1787L53.6846 26.4502L52.9463 28.7822L55.3594 28.3828L71.1641 25.7676L58.8379 36L56.9561 37.5625L59.2021 38.5312L73.9111 44.876L58.0107 46.8193L55.582 47.1162L56.9482 49.1455L65.8916 62.4355L51.4648 55.4746L49.2617 54.4111L49.3135 56.8564L49.6523 72.873L41.2783 59.2158L40 57.1299L38.7217 59.2158L30.3467 72.873L30.6865 56.8564L30.7383 54.4111L28.5352 55.4746L14.1074 62.4355L23.0518 49.1455L24.418 47.1162L21.9893 46.8193L6.08789 44.876L20.7979 38.5312L23.0439 37.5625L21.1621 36L8.83496 25.7676L24.6406 28.3828L27.0537 28.7822L26.3154 26.4502L21.4775 11.1787L33.3594 21.9229L35.1738 23.5635L35.8135 21.2021L40 5.74023L44.1865 21.2021Z"
+                    stroke-width="3" />
+            </svg>
+
+            <h2 class="promo__title">Новая коллекция французских авторов</h2>
+        </header>
+        <div class="promo__text-container">
+            <p class="promo__text">
+                Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою
+                очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.
+
+            </p>
+            <p class="promo__text">
+                Принимая во внимание показатели успешности, граница обучения кадров предопределяет
+                высокую востребованность
+                направлений прогрессивного развития.
+            </p>
+        </div>
+        <button class="promo__button button--alt">Ознакомиться</button>
+    </section>
+
+    <section class="team" id="teamSection">
+        <img src="./assets/images/painting_and_brushes.png" alt="Our Team" class="team__image">
+        <div class="team__content-wrapper">
+            <h2 class="team__title">Наша команда</h2>
+            <p class="team__text">
+                Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет
+                оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены
+                отталкиваться от того, что консультация с широким активом.
+            </p>
+            <div class="team__profiles">
+                <img src="./assets/images/profile_photo-1.png" alt="Profile Photo" class="team__profile">
+                <img src="./assets/images/profile_photo-2.png" alt="Profile Photo" class="team__profile">
+                <img src="./assets/images/profile_photo-3.png" alt="Profile Photo" class="team__profile">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="#" class="footer__logo"><img src="./assets/images/logo.svg" alt="Ink. House"></a>
+        <div class="footer__contacts">
+            <a href="tel:+79995435454" class="footer__phone">+7 (999) 543-54-54</a>
+            <p>Мастерская</p>
+        </div>
+        <div class="footer__reproductions footer__block footer-block">
+            <h4 class="footer-block__subtitle"><a href="#reproductionsSection">Репродукции</a></h4>
+            <ul class="footer-block__list">
+                <li class="footer-block__list-item"><a href="#reproductionsSection">Франция</a></li>
+                <li class="footer-block__list-item"><a href="#reproductionsSection">Германия</a></li>
+                <li class="footer-block__list-item"><a href="#reproductionsSection">Англия</a></li>
+            </ul>
+        </div>
+        <div class="footer__news footer__block footer-block">
+            <h4 class="footer-block__subtitle"><a href="#promoSection">Новинки</a></h4>
+            <ul class="footer-block__list">
+                <li class="footer-block__list-item"><a href="#promoSection">2021</a></li>
+                <li class="footer-block__list-item"><a href="#promoSection">2020</a></li>
+            </ul>
+        </div>
+        <div class="footer__about footer__block footer-block">
+            <h4 class="footer-block__subtitle"><a href="#teamSection">О нас</a></h4>
+            <ul class="footer-block__list">
+                <li class="footer-block__list-item"><a href="#teamSection">Художники</a></li>
+                <li class="footer-block__list-item"><a href="#teamSection">Менеджеры</a></li>
+            </ul>
+        </div>
+        <div class="footer__socials footer-socials">
+            <div class="footer-socials__list">
+                <a class="footer-socials__icon" href="https://facebook.com" target="_blank"><img src="./assets/images/facebook_logo-black.svg" alt="Facebook"></a>
+                <a class="footer-socials__icon" href="https://instagram.com" target="_blank"><img src="./assets/images/instagram_logo-back.svg" alt="Instagram"></a>
+                <a class="footer-socials__icon" href="https://youtube.com" target="_blank"><img src="./assets/images/youtube_logo-black.svg" alt="Youtube"></a>
+            </div>
+            <p class="footer-socials__text">Ink. House ®</p>
+            <p class="footer-socials__text">All rights reserved</p>
+        </div>
+    </footer>
+
+    <dialog id="mobileDrawer" class="mobile-drawer">
+        <div class="mobile-drawer__inner">
+            <header class="mobile-drawer__header">
+                <a href="#"><img src="./assets/images/logo.svg" alt="Ink. House" class="logo"></a>
+            </header>
+            <div class="mobile-drawer__container">
+                <button id="closeMobileDrawerButton" type="button"
+                    class="mobile-drawer__close-button close-button"></button>
+                <ul class="mobile-drawer__list">
+                    <li class="mobile-drawer__list-item menu-item"><a href="#reproductionsSection">Репродукции</a></li>
+                    <li class="mobile-drawer__list-item menu-item"><a href="#promoSection">Новинки</a></li>
+                    <li class="mobile-drawer__list-item menu-item"><a href="#teamSection">О нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </dialog>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>

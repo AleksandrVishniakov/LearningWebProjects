@@ -1,0 +1,18 @@
+.menu-item {
+    @include fluid-text(20, 16);
+
+    transition-duration: var(--transition-duration);
+
+    a {
+        padding: 10px 0;
+    }
+
+    @include hover {
+        cursor: pointer;
+        color: var(--color-primary);
+    }
+
+    @include tablet {
+        padding: 7px 0;
+    }
+}

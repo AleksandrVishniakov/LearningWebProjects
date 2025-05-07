@@ -1,0 +1,30 @@
+.cart-button {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 10px;
+
+    svg {
+        transform: translateY(10%);
+    }
+
+    &[data-cart-items-count]::after {
+        position: absolute;
+        content: attr(data-cart-items-count);
+        top: 0;
+        left: 0;
+        background-color: var(--color-primary);
+        color: var(--color-on-primary) !important;
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 0 6px;
+        text-align: center;
+    }
+
+    @include hover {
+        cursor: pointer;
+        stroke: var(--color-primary);
+    }
+}

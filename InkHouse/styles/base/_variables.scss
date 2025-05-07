@@ -1,0 +1,37 @@
+:root {
+    --font-family-base: "Raleway";
+
+    --color-primary: #598D66;
+    --color-on-primary: #F4F6F5;
+    --color-secondary: #EEDB6D;
+    --color-secondary-hover: #FAEB97;
+    --color-secondary-active: #D9B949;
+    --color-surface: #F4F6F5;
+    --color-font: #2C2D35;
+    --color-font-variant: #86928B;
+    --color-container-surface: #E1EDE6;
+    --color-container-surface: #E1EDE6;
+    --color-container-surface-alt: #D4E8D9;
+    --color-container-surface-accent: #376B44;
+    --color-on-container-surface-accent: #F4F6F5;
+
+    --transition-duration: 0.1s;
+
+    --padding-x: 165px;
+
+    @include desktop {
+        --padding-x: 80px;
+    }
+
+    @include tablet {
+        --padding-x: 39px;
+    }
+
+    @include tablet-s {
+        --padding-x: 33px;
+    }
+
+    @include mobile {
+        --padding-x: 15px;
+    }
+}

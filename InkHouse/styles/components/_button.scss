@@ -1,0 +1,58 @@
+.button,
+.button--alt {
+    @include reset-button;
+    @include fluid-text(18, 16);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: fit-content;
+    padding: 0 10px;
+    transition-duration: var(--transition-duration);
+    font-weight: 500;
+
+    @include tablet {
+        height: 60px;
+    }
+
+    @include tablet-s {
+        height: 50px;
+    }
+}
+
+.button {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+
+    @include hover {
+        cursor: pointer;
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+        color: var(--color-on-primary);
+    }
+
+    // &:active,
+    // &:focus {
+    //     background-color: var(--color-container-surface-accent);
+    //     border-color: var(--color-container-surface-accent);
+    //     color: var(--color-on-container-surface-accent);
+    // }
+}
+
+.button--alt {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-font);
+
+    @include hover {
+        background-color: var(--color-secondary-hover);
+        border-color: var(--color-secondary-hover);
+    }
+
+    // &:active,
+    // &:focus {
+    //     background-color: var(--color-secondary-active);
+    //     border-color: var(--color-secondary-active);
+    // }
+}
