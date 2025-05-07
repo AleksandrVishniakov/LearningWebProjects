@@ -227,14 +227,14 @@ svg * {
 
 @font-face {
   font-family: "Raleway";
-  src: url("../../assets/fonts/Raleway-Medium.woff2") format("woff2");
+  src: url("../assets/fonts/Raleway-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../../assets/fonts/Raleway-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/Raleway-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -855,7 +855,7 @@ h3,
   width: 100%;
   height: 574px;
   padding: 70px clamp(var(--padding-x), 100%, 50% - 720px);
-  background: url("../../assets/images/promo_bg-l.png") center/cover no-repeat;
+  background: url("../assets/images/promo_bg-l.png") center/cover no-repeat;
   color: var(--color-on-primary);
 }
 .promo__header {
@@ -912,7 +912,7 @@ h3,
 @media (max-width: 768px) {
   .promo {
     height: 502px;
-    background-image: url("../../assets/images/promo_bg-m.png");
+    background-image: url("../assets/images/promo_bg-m.png");
   }
 }
 @media (max-width: 576px) {
@@ -920,7 +920,7 @@ h3,
     height: -moz-fit-content;
     height: fit-content;
     padding: 50px var(--padding-x);
-    background-image: url("../../assets/images/promo_bg-s.png");
+    background-image: url("../assets/images/promo_bg-s.png");
   }
 }
 @media (max-width: 485px) {
