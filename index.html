@@ -1,14 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearningWebProjects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+            font-family: 'Rubik';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 36px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #8b8b8b;
+        }
+
+        a {
+            color: currentColor;
+        }
+        .list-wrapper {
+            margin: 30px auto;
+            max-width: 1000px;
+            padding: 20px;
+        }
+        .list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .list-item {
+            list-style: none;
+        }
+        .project {
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid gray;
+            a {
+                text-decoration: none;
+            }
+        }
+        .project:hover{
+            cursor: pointer;
+        }
+        .project__preview {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .project__name {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Projects List</h1>
-    <ul>
-        <li><a href="./InkHouse/index.html">Магазин картин Ink. House</a></li>
-    </ul>
+    <h1 id="header">Projects List</h1>
+    <label for="header">by <a href="https://github.com/AleksandrVishniakov" target="_blank">Aleksandr
+            Vishniakov</a></label>
+    <div class="list-wrapper">
+        <ul class="list">
+            <li class="list-item project">
+                <a href="./InkHouse/index.html">
+                    <img src="./InkHouse/docs/images/page_example.png" alt="Ink. House" class="project__preview">
+                    <h3 class="project__name">Ink. House</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
 </body>
+
 </html>
